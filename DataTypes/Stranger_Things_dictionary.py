@@ -20,8 +20,11 @@ while(True):
         print(characters)
 
     elif (choose == "2"):
-        name = input("Choose a character to find: ")
-        print(characters[name])
+        name = input("Choose a character: ")
+          if name in characters:
+            print(characters[name])
+          else:
+            print("No such a character")
 
     elif (choose == "3"):
         name = input("Choose a character to remove: ")
